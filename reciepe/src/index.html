@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <link rel="stylesheet" href="/src/app.css"> <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <div class="ingredient-page">
+        <!-- Left Side: Ingredient Form -->
+        <div class="ingredient-container">
+            <h1>Enter Available Ingredients</h1>
+            <p>You selected: Breakfast Recipes</p>
+            <input type="text" placeholder="Enter ingredients" />
+            <button>Get Recipe</button>
+        </div>
+    
+        <!-- Right Side: Matching Recipes -->
+        <div class="recipe-container">
+            <h1>Matching Recipes</h1>
+            <p><strong>Masala Dosa</strong></p>
+            <p>Ingredients: rice, lentils, potato, onions, spices, oil</p>
+            <p><strong>Preparation:</strong> Soak rice and lentils overnight...</p>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/* Container for the entire page */
+.ingredient-page {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    gap: 20px; /* Space between form and recipe */
+    box-sizing: border-box; /* Ensure padding is included in height/width */
+}
+
+/* Left side: Ingredient form container */
+.ingredient-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    max-width: 400px; /* Max width for the form container */
+    width: 100%; /* Full width */
+}
+
+/* Right side: Recipe container */
+.recipe-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Max width for the recipe container */
+    width: 100%; /* Full width */
+}
+
+/* Headline styling for both containers */
+.ingredient-container h1,
+.recipe-container h1 {
+    font-size: 1.8rem; /* Responsive font size */
+    margin-bottom: 20px;
+    color: #333; /* Dark color for the headline */
+}
+
+/* Paragraph styling */
+.ingredient-container p,
+.recipe-container p {
+    font-size: 1.1rem; /* Slightly larger font for the paragraph */
+    color: #555; /* Grey color for the paragraph text */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+/* Input field styling */
+.ingredient-container input {
+    width: 100%; /* Full width for the input */
+    padding: 10px; /* Padding for the input */
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size for the input */
+}
+
+/* Button styling */
+.ingredient-container button {
+    background-color: #b30def; /* Button color */
+    color: white; /* Text color for the button */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Button hover effect */
+.ingredient-container button:hover {
+    background-color: #218838; /* Darker shade for button on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ingredient-page {
+        flex-direction: column; /* Stack form and recipes vertically */
+        align-items: center;
+    }
+
+    .ingredient-container,
+    .recipe-container {
+        max-width: 100%; /* Full width on smaller screens */
+        text-align: center;
+    }
+}

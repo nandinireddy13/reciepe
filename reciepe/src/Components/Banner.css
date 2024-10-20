@@ -1,0 +1,24 @@
+/* Full-page banner styling */
+.banner {
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/64/00/51/1000_F_264005197_kz8P2s6Z6RMw3wUtvURy9z9B2i50m0IN.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* 50% of the viewport height */
+    width: 100vw; /* Full width of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner-content h1 {
+    font-size: 3rem; /* Adjust the font size */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
