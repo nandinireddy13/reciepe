@@ -18,7 +18,8 @@ const categories = [
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react_project/">
+      <div>
       <Routes>
         <Route path="/" element={
           <div className="full-width">
@@ -34,6 +35,7 @@ function App() {
         } />
         <Route path="/ingredients" element={<IngredientPage />} />
       </Routes>
+      </div>
     </Router>
   );
 }
